@@ -8,12 +8,4 @@ export const metadata: Metadata = {
     'student visa, immigration, tourist visa, consultancy, study abroad , BSJ home page , UK Visa , Moscow visa',
 };
 
-export default function Home() {
-  return (
-    <div className="text-primary">
-      <h2>Simple Home</h2>
-      <h2 className="">Simple Home</h2>
-      <h2 className="">Simple Home</h2>
-    </div>
-  );
-}
+export default function Home() {}

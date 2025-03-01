@@ -7,3 +7,7 @@
   --color-secondary: #242c4f;
   --font-poppins: Poppins, 'sans-serif';
 }
+
+.NavLink {
+  @apply text-lg text-primary tracking-wider lg:px-2;
+}
