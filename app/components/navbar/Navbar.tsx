@@ -9,7 +9,7 @@ const Navbar = () => {
   const [showNav, setShowNav] = useState<boolean>(false);
 
   return (
-    <div className="h-[70px] flex items-center justify-between md:px-20 absolute w-full">
+    <div className="h-[70px] flex items-center justify-between md:px-20 absolute w-full z-50 bg-[#F3F4F6]">
       {/* Navbar logo  */}
       <NavLogo />
 

@@ -11,6 +11,7 @@ interface MenuIconsProps {
 const MenuIcons: React.FC<MenuIconsProps> = ({ icons, toggleIcons }) => {
   const BarStyleClasses = 'absolute top-6 right-6 ';
   const XmarkStyleClasses = 'my-6 ml-24 ';
+  
   return (
     <motion.div
       className={`md:hidden text-secondary cursor-pointer ${

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import HeroSection from './components/Home_components/HeroSection/HeroSection';
 
 export const metadata: Metadata = {
   title: 'BSJ Consultancy And Immigration Home Page',
@@ -8,4 +9,6 @@ export const metadata: Metadata = {
     'student visa, immigration, tourist visa, consultancy, study abroad , BSJ home page , UK Visa , Moscow visa',
 };
 
-export default function Home() {}
+export default function Home() {
+  return <HeroSection />;
+}
