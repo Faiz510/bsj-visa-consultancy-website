@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import HeroSection from './components/Home_components/HeroSection/HeroSection';
+import About from './components/Home_components/aboutSection/About';
 
 export const metadata: Metadata = {
   title: 'BSJ Consultancy And Immigration Home Page',
@@ -10,5 +11,10 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <HeroSection />;
+  return (
+    <div className="">
+      <HeroSection />
+      <About />
+    </div>
+  );
 }
