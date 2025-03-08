@@ -3,7 +3,7 @@ import Navbar from './components/navbar/Navbar';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'BSJ Consultancy And Immigration',
+  title: 'BSJ Consultancy & Immigration',
   description:
     'Helping students and travelers with visas, immigration, and consultancy services. Your trusted partner for a hassle-free journey.',
   keywords:

@@ -4,7 +4,7 @@ import AboutImgSection from './AboutImgSection';
 
 const About = () => {
   return (
-    <section className="w-full h-[500px] my-10 md:px-20 px-4 py-4">
+    <section className="w-full  my-10 md:px-20 px-4 py-6 mb-24">
       <div className="text-center text-secondary my-6">
         <h3 className="text-5xl font-semibold tracking-wider">Who We Are</h3>
       </div>
