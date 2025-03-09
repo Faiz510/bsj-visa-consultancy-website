@@ -4,8 +4,8 @@ import { FaArrowRight, FaGraduationCap } from 'react-icons/fa6';
 import ServiceCart from '../../ServiceCart';
 import { FaGlobeAfrica } from 'react-icons/fa';
 import { FaBookOpen } from 'react-icons/fa';
-import { IoDocumentTextOutline } from 'react-icons/io5';
 import { motion } from 'framer-motion';
+import { IoDocumentText } from 'react-icons/io5';
 
 const Service = () => {
   return (
@@ -42,7 +42,7 @@ const Service = () => {
             description="Navigating international education can be complex. We assist students in choosing the right university, preparing applications, securing scholarships, and handling the visa process with precision and care."
           />
           <ServiceCart
-            Icon={IoDocumentTextOutline}
+            Icon={IoDocumentText}
             title={'Document & Legalization'}
             description="Our certified professionals handle the translation and notarization of important documents, ensuring they meet the legal requirements of your destination country. We make the process simple and stress-free."
           />
