@@ -12,7 +12,7 @@ const config: Config = {
         // primary: '#FEC60D',
         primary: '#00011A',
         secondary: '#242C4F',
-        bgGray: '#F3F4F6',
+        bg_gray: '#F3F4F6',
       },
     },
   },

@@ -3,6 +3,7 @@ import HeroSection from './components/Home_components/HeroSection/HeroSection';
 import About from './components/Home_components/aboutSection/About';
 import Service from './components/Home_components/serviceSection/Service';
 import ChooseUs from './components/Home_components/chooseUs/ChooseUs';
+import Destination from './components/Home_components/destination/Destination';
 
 export const metadata: Metadata = {
   title: 'BSJ Consultancy And Immigration Home Page',
@@ -17,8 +18,9 @@ export default function Home() {
     <div className="">
       <HeroSection />
       <About />
-      <Service />
+      <Destination />
       <ChooseUs />
+      <Service />
     </div>
   );
 }
