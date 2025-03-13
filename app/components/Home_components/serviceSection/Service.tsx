@@ -9,7 +9,7 @@ import { IoDocumentText } from 'react-icons/io5';
 
 const Service = () => {
   return (
-    <section className="my-10 md:px-20 px-4 py-6  bg-[#F3F4F6]">
+    <section className="my-10 md:px-20 px-4 py-6  bg-[#F3F4F6] ">
       <div className="text-center text-secondary my-6">
         <h3 className="text-5xl font-semibold tracking-wider">What We Offer</h3>
       </div>

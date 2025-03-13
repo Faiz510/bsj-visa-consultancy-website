@@ -96,9 +96,8 @@ const Destination = () => {
           ))}
 
         {isVisa === VisaTabType.STUDENT &&
-          DESTINATION_DATA.filter((data) => data.visa === 'Student Visa')
-            .slice(0, 4)
-            .map((data, index) => (
+          DESTINATION_DATA.filter((data) => data.visa === 'Student Visa').map(
+            (data, index) => (
               <DestinationCard
                 key={index}
                 imgSrc={data.image}
@@ -106,7 +105,8 @@ const Destination = () => {
                 visa={data.visa}
                 altText={data.title}
               />
-            ))}
+            ),
+          )}
 
         {isVisa === VisaTabType.TOURIST &&
           DESTINATION_DATA.filter((data) => data.visa === 'Tourist Visa')
