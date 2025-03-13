@@ -1,13 +1,3 @@
-// import thailand from '../../../../public/home-images/destination/tourist/thailand.jpg';
-// import singapore from '../../../../public/home-images/destination/tourist/singapore.jpg';
-// import malaysia from '../../../../public/home-images/destination/tourist/malaysia.jpg';
-// import dubai from '../../../../public/home-images/destination/tourist/dubia.jpg';
-// import maldives from '../../../../public/home-images/destination/tourist/maldives.jpg';
-// import bangkok from '../../../../public/home-images/destination/tourist/bangkok.jpg';
-// import azherbhaijan from '../../../../public/home-images/destination/tourist/azherbhaijan.jpg';
-// import northCyprus from '../../../../public/home-images/destination/students/north-cyprus.jpg';
-// import mascow from '../../../../public/home-images/destination/students/mascow.jpg';
-
 import thailand from '@/public/home-images/destination/tourist/thailand.jpg';
 import singapore from '@/public/home-images/destination/tourist/singapore.jpg';
 import malaysia from '@/public/home-images/destination/tourist/malaysia.jpg';
@@ -17,6 +7,9 @@ import bangkok from '@/public/home-images/destination/tourist/bangkok.jpg';
 import azherbhaijan from '@/public/home-images/destination/tourist/azherbhaijan.jpg';
 import northCyprus from '@/public/home-images/destination/students/north-cyprus.jpg';
 import mascow from '@/public/home-images/destination/students/mascow.jpg';
+import uk from '@/public/home-images/destination/students/China.jpg';
+import china from '@/public/home-images/destination/students/China.jpg';
+import netherland from '@/public/home-images/destination/students/netherlands.jpg';
 
 enum VisaType {
   TOURIST = 'Tourist Visa',
@@ -68,6 +61,21 @@ const DESTINATION_DATA: DestinationDataType[] = [
     image: `${bangkok.src}`,
     title: 'Bangkok',
     visa: VisaType.TOURIST,
+  },
+  {
+    image: `${uk.src}`,
+    title: 'UK',
+    visa: VisaType.STUDENT,
+  },
+  {
+    image: `${china.src}`,
+    title: 'China',
+    visa: VisaType.STUDENT,
+  },
+  {
+    image: `${netherland.src}`,
+    title: 'Netherland',
+    visa: VisaType.STUDENT,
   },
   {
     image: `${azherbhaijan.src}`,

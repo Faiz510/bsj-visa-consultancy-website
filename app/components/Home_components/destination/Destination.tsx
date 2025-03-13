@@ -1,10 +1,8 @@
 'use client';
 import { motion } from 'framer-motion';
-import DestinationCard from '../../DestinationCard';
-import DESTINATION_DATA from './DestinationData';
-import { FaArrowRight } from 'react-icons/fa6';
-import { useEffect, useState } from 'react';
-import Tabs from './Tabs';
+import { useState } from 'react';
+import CallToAction from '../../CallToAction';
+import FilteredDestination from './components/FilteredDestination';
 
 enum VisaTabType {
   STUDENT = 'Students',
@@ -79,66 +77,23 @@ const Destination = () => {
       </div>
 
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between items-center gap-6 my-4 mx-auto w-full"
+        className="grid grid-cols-1 md:grid-cols-2  justify-between items-center gap-6 my-4 mx-auto w-full"
         initial={{ opacity: 0 }}
         animate={{ transition: { duration: 0.8 }, opacity: 1 }}
         key={`cards-${isVisa}`}
       >
-        {isVisa == VisaTabType.BOTH &&
-          DESTINATION_DATA.slice(0, 4).map((data, index) => (
-            <DestinationCard
-              key={index}
-              imgSrc={data.image}
-              title={data.title}
-              visa={data.visa}
-              altText={data.title}
-            />
-          ))}
-
-        {isVisa === VisaTabType.STUDENT &&
-          DESTINATION_DATA.filter((data) => data.visa === 'Student Visa').map(
-            (data, index) => (
-              <DestinationCard
-                key={index}
-                imgSrc={data.image}
-                title={data.title}
-                visa={data.visa}
-                altText={data.title}
-              />
-            ),
-          )}
-
-        {isVisa === VisaTabType.TOURIST &&
-          DESTINATION_DATA.filter((data) => data.visa === 'Tourist Visa')
-            .slice(0, 4)
-            .map((data, index) => (
-              <DestinationCard
-                key={index}
-                imgSrc={data.image}
-                title={data.title}
-                visa={data.visa}
-                altText={data.title}
-              />
-            ))}
+        {/* Filter Destination Btn  */}
+        <FilteredDestination isVisa={isVisa} />
       </motion.div>
 
+      {/* Call To Action Btn  */}
       <div className="w-full flex justify-center">
-        <motion.button
-          className="bg-secondary text-white hover:bg-primary hover:text-white rounded-4xl px-4 py-1 md:my-10 my-6 cursor-pointer  flex gap-2 items-center group"
-          whileHover={{
-            scale: 1.01,
-            transition: {
-              ease: 'easeOut',
-              duration: 0.5,
-              type: 'spring',
-            },
-            boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.2)',
-          }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <span className="tracking-wider">View More Destination</span>
-          <FaArrowRight className="text-white absolute opacity-0 group-hover:relative group-hover:opacity-100 group-hover:duration-500 group-hover:ease-out " />
-        </motion.button>
+        <CallToAction
+          text={`View More ${
+            isVisa === VisaTabType.BOTH ? '' : isVisa
+          } Destination`}
+          href="/destination"
+        />
       </div>
     </motion.section>
   );

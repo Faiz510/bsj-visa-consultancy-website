@@ -4,7 +4,7 @@ import CopywriteSection from './components/CopywriteSection';
 import ContactInfo from './components/contactInfo/ContactInfo';
 import Social from './components/social/Social';
 import Links from './components/links/Links';
-import Logo from './components/logo/logo';
+import Logo from './components/logo/Logo';
 
 const Footer = () => {
   return (
