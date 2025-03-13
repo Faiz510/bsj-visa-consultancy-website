@@ -8,11 +8,11 @@ interface AboutImgProps {
 const AboutImg: React.FC<AboutImgProps> = ({ image }) => {
   return (
     <Image
-      className="rounded-2xl border-2 border-gray-400 shadow-2xl"
+      className="rounded-2xl border-2 border-gray-400 shadow-black/35  shadow-xl"
       src={`${image}`}
       alt="this is image"
-      width={150}
-      height={150}
+      width={200}
+      height={200}
     />
   );
 };

@@ -1,38 +1,28 @@
 import { motion } from 'framer-motion';
 import { FaArrowRight } from 'react-icons/fa';
+import CallToAction from '../../CallToAction';
 
 const AboutContent = () => {
   return (
     <div className="py-6 md:col-span-6">
-      <h2 className="text-6xl text-primary font-bold my-2"> BSJ </h2>
-      <h3 className="text-4xl text-secondary my-2 font-medium tracking-wider">
-        Consltant & Immigiration
-      </h3>
-      <h4 className="text-xl text-secondary tracking-wider">
-        (SMC-Private) Limited
+      <h2 className="text-8xl text-primary font-bold my-2 tracking-widest">
+        {' '}
+        BSJ{' '}
+      </h2>
+      <div className=" text-secondary my-2 font-medium tracking-wider flex justify-start items-end gap-2">
+        <h3 className="text-5xl"> Consltant & Immigiration</h3>{' '}
+        <span className="text-lg">(pvt.ltd)</span>
+      </div>
+      <h4 className="text-3xl text-secondary tracking-wider font-medium">
+        Study And Tours
       </h4>
       <h4 className="text-sm text-secondary tracking-wider">
-        Planning your next adventure? Let us handle the visa process while you
-        focus on making memories. Whether it's a solo trip, a family vacation,
-        or a getaway with friends, we ensure a smooth and stress-free visa
-        application. Pack your bags—your journey starts here!
+        Your trusted partner in immigration services! Whether you're planning to
+        study abroad or explore new destinations, we simplify your student and
+        tourist visa process for a hassle-free journey. Pack your bags—your
+        journey starts here!
       </h4>
-      <motion.button
-        className="bg-secondary text-white hover:bg-primary hover:text-white rounded-4xl px-4 py-1 md:my-10 my-6 cursor-pointer  flex gap-2 items-center group"
-        whileHover={{
-          scale: 1.01,
-          transition: {
-            ease: 'easeOut',
-            duration: 0.5,
-            type: 'spring',
-          },
-          boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.2)',
-        }}
-        whileTap={{ scale: 0.95 }}
-      >
-        <span className="tracking-wider">Learn More</span>
-        <FaArrowRight className="text-white absolute opacity-0 group-hover:relative group-hover:opacity-100 group-hover:duration-500 group-hover:ease-out " />
-      </motion.button>
+      <CallToAction text="More About" href="/about" />
     </div>
   );
 };

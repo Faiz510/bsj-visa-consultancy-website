@@ -28,7 +28,7 @@ const AboutImgSection = () => {
         height={400}
       />
 
-      <div className="relative top-[0%] left-[60%]">
+      <div className="relative top-[-50px] left-[60%]">
         <motion.div
           initial={ANIMATION_VARIANTS.initial}
           whileInView={{
@@ -47,8 +47,8 @@ const AboutImgSection = () => {
           whileInView={{
             scale: 1,
             rotate: -10,
-            marginTop: -128,
-            marginLeft: -128,
+            marginTop: -180,
+            marginLeft: -180,
             opacity: 1,
           }}
           transition={{ duration: 0.5 }}
