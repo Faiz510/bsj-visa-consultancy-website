@@ -74,7 +74,7 @@ const DESTINATION_DATA: DestinationDataType[] = [
   },
   {
     image: `${netherland.src}`,
-    title: 'Netherland',
+    title: 'Schengen',
     visa: VisaType.STUDENT,
   },
   {

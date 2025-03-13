@@ -1,24 +1,23 @@
 import Image from 'next/image';
 import React from 'react';
-import image4 from '@/public/HeroImages/image-4.jpg';
 import IconBox from './IconBox';
-import { FaUserGraduate } from 'react-icons/fa6';
 import { AiOutlineCustomerService } from 'react-icons/ai';
 import { GiTeacher } from 'react-icons/gi';
+import chooseUsImg from '@/public/home-images/Choose-img.jpg';
 
 const ChooseUs = () => {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 gap-4 py-10 px-4 md:px-20">
       <div className="flex justify-between items-center w-full">
         <Image
-          src={image4.src}
+          src={chooseUsImg.src}
           alt="choose use section image"
           width={600}
-          height={700}
-          className="rounded-xl shadow-md"
+          height={200}
+          className="rounded-xl shadow-md w-[600px] h-[550px] object-bottom object-cover"
         />
       </div>
-      <div>
+      <div className="flex justify-center items-center flex-col gap-4">
         <div>
           <h3 className="text-4xl text-black font-medium -tracking-wider my-2">
             Why Choose Us?
