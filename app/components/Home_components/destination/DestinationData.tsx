@@ -6,7 +6,7 @@ import maldives from '@/public/home-images/destination/tourist/maldives.jpg';
 import bangkok from '@/public/home-images/destination/tourist/bangkok.jpg';
 import azherbhaijan from '@/public/home-images/destination/tourist/azherbhaijan.jpg';
 import northCyprus from '@/public/home-images/destination/students/north-cyprus.jpg';
-import mascow from '@/public/home-images/destination/students/mascow.jpg';
+import russia from '@/public/home-images/destination/students/mascow.jpg';
 import uk from '@/public/home-images/destination/students/China.jpg';
 import china from '@/public/home-images/destination/students/China.jpg';
 import netherland from '@/public/home-images/destination/students/netherlands.jpg';
@@ -23,8 +23,8 @@ interface DestinationDataType {
 }
 const DESTINATION_DATA: DestinationDataType[] = [
   {
-    image: `${mascow.src}`,
-    title: 'Mascow',
+    image: `${russia.src}`,
+    title: 'Russia',
     visa: VisaType.STUDENT,
   },
   {

@@ -1,11 +1,15 @@
 'use client';
 
 import { FaArrowRight, FaGraduationCap } from 'react-icons/fa6';
-import ServiceCart from '../../ServiceCart';
 import { FaGlobeAfrica } from 'react-icons/fa';
 import { FaBookOpen } from 'react-icons/fa';
-import { motion } from 'framer-motion';
-import { IoDocumentText } from 'react-icons/io5';
+import ServiceCard from './ServiceCard';
+import globeIcon from '@/public/home-images/services/globe-bsj-icon.svg';
+import bookIcon from '@/public/home-images/services/book-bsj-icon.svg';
+import hotelIcon from '@/public/home-images/services/hotel-bsj-icon.svg';
+import scholarshipIcon from '@/public/home-images/services/scholarship-bsj-icon.svg';
+import studentIcon from '@/public/home-images/services/student-bsj-icon.svg';
+import arrowRightIcon from '@/public/home-images/services/arrow-right-bsj-icon.svg';
 
 const Service = () => {
   return (
@@ -20,52 +24,51 @@ const Service = () => {
           We Strive to Provide the Finest Service Possible to Our Clients
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 my-6">
-          <ServiceCart
-            Icon={FaGraduationCap}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-6">
+          <ServiceCard
+            Icon={studentIcon}
             title={'Student Visa'}
             description="We provide expert guidance for students looking to study abroad. From securing student visa approvals to assisting with university
-              selection, scholarships, and accommodation, we ensure a seamless
+              selection, scholarships, and accommodation, we ensure a seamless 
               journey for aspiring students."
+            color="secondary"
           />
 
-          <ServiceCart
-            Icon={FaGlobeAfrica}
+          <ServiceCard
+            Icon={globeIcon}
             title={'Tour Packages'}
-            description="Discover the world with our carefully curated tour packages. Whether you’re looking for group tours, solo travel, or family adventures, we offer personalized itineraries to make your trip memorable.
+            description="Discover the world with our carefully curated tour packages. Whether you’re looking for group tours, solo travel, or family adventures, we offer personalized itineraries to make your trip memorable. 
             "
+            color="primary"
           />
 
-          <ServiceCart
-            Icon={FaBookOpen}
+          <ServiceCard
+            Icon={bookIcon}
             title={'Study Abroad Consultancy'}
             description="Navigating international education can be complex. We assist students in choosing the right university, preparing applications, securing scholarships, and handling the visa process with precision and care."
+            color="secondary"
           />
-          <ServiceCart
-            Icon={IoDocumentText}
-            title={'Document & Legalization'}
-            description="Our certified professionals handle the translation and notarization of important documents, ensuring they meet the legal requirements of your destination country. We make the process simple and stress-free."
+
+          <ServiceCard
+            Icon={scholarshipIcon}
+            title={'Scholarship Assistance'}
+            description="We help students secure scholarships by guiding them through the application process and eligibility requirements, making education more accessible and affordable."
+            color="primary"
+          />
+
+          <ServiceCard
+            Icon={hotelIcon}
+            title={'Hotel Reservation'}
+            description="We assist in finding and booking the best hotels, ensuring a comfortable and budget-friendly stay for your travel needs."
+            color="secondary"
+          />
+          <ServiceCard
+            Icon={arrowRightIcon}
+            title={'Veiw Services'}
+            description="To complete view of all Service click on and you will navigated to Services Page"
+            color="primary"
           />
         </div>
-      </div>
-
-      <div className="w-full flex justify-center">
-        <motion.button
-          className="bg-secondary text-white hover:bg-primary hover:text-white rounded-4xl px-4 py-1 md:my-10 my-6 cursor-pointer  flex gap-2 items-center group"
-          whileHover={{
-            scale: 1.01,
-            transition: {
-              ease: 'easeOut',
-              duration: 0.5,
-              type: 'spring',
-            },
-            boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.2)',
-          }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <span className="tracking-wider">View More Servies</span>
-          <FaArrowRight className="text-white absolute opacity-0 group-hover:relative group-hover:opacity-100 group-hover:duration-500 group-hover:ease-out " />
-        </motion.button>
       </div>
     </section>
   );
