@@ -8,14 +8,6 @@ interface HeroDataType {
   tagline: string;
   image: string;
 }
-// {
-//   title: 'BSJ',
-//   subheading: 'Consltant & Immigiration',
-//   tagline: '(SMC-Private) Limited',
-//   image: '',
-// },
-
-// #F3F4F6
 const HERO_DATA: HeroDataType[] = [
   {
     title: 'Your Dream Destination Awaits!',

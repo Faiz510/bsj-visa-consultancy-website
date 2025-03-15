@@ -46,7 +46,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           {title}
         </h4>
         <motion.div
-          className="w-[20%] mx-auto h-1 bg-white "
+          className="w-[20%] mx-auto h-1 bg-white"
           initial={{ width: '20%' }}
           animate={{
             width: isHover ? '40%' : '20%',

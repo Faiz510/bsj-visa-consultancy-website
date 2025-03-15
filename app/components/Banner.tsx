@@ -8,7 +8,7 @@ interface BannerPropType {
 const Banner: React.FC<BannerPropType> = ({ title, bgImg }) => {
   return (
     <section
-      className="w-full h-[250px] bg-cover bg-center relative flex justify-center items-center "
+      className="w-full h-[250px] bg-cover bg-center relative flex justify-center items-center mb-20"
       style={{ backgroundImage: `url(${bgImg})` }}
     >
       <h2 className="text-5xl font-semibold tracking-wider text-white z-20">

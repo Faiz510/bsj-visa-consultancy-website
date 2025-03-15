@@ -31,7 +31,7 @@ const DestinationHomeCard: React.FC<DestinationHomeCardProps> = ({
         <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-80 transition-opacity duration-300"></div>
       </motion.div>
 
-      <div className="absolute bottom-2 left-3 text-white font-semibold tracking-wide text-4xl ">
+      <div className="absolute bottom-2 left-3 text-white font-semibold tracking-wide text-4xl">
         {title}
       </div>
       <span className="bg-primary text-white px-2 rounded-2xl text-sm font-medium tracking-widest absolute right-3 top-3">

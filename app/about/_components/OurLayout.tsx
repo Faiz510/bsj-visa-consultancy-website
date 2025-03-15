@@ -42,11 +42,11 @@ const OurLayout: React.FC<OurLayoutPropType> = ({
         <h4 className="text-5xl tracking-wider font-semibold text-secondary">
           {mainHeading}
         </h4>
-        <p className="text-lg text-secondary tracking-wider md:order-2">
+        <div className="text-lg text-secondary tracking-wider md:order-2">
           {topHeading}
           <AnimatedLine text={`${paraOne}`} />
           <AnimatedLine text={`${paraTwo}`} />
-        </p>
+        </div>
       </div>
     </section>
   );
