@@ -14,7 +14,7 @@ const CONTACT_INFO: CONTACT_INFO_TYPE[] = [
   {
     name: 'WhatsApp',
     icon: IoLogoWhatsapp,
-    detail: '+92 310-5500012',
+    detail: '+92 310 5500012',
   },
   {
     name: 'Phone',

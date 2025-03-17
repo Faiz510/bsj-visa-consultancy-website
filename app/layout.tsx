@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Navbar from './components/navbar/Navbar';
 import './globals.css';
 import Footer from './components/footer/Footer';
+import WhatsApp from './components/whatsapp/Whatsapp';
 
 export const metadata: Metadata = {
   title: 'BSJ Consultancy & Immigration',
@@ -21,6 +22,8 @@ export default function RootLayout({
       <body className="font-poppins overflow-x-hidden">
         <Navbar />
         {children}
+
+        <WhatsApp />
         <Footer />
       </body>
     </html>

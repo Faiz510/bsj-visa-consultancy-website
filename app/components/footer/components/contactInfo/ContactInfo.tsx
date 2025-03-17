@@ -11,7 +11,7 @@ const ContactInfo = () => {
       <h4 className="text-secondary opacity-90 font-semibold">Contact Info</h4>
 
       <div className="flex justify-center items-start flex-col gap-1">
-        <Info Icon={FaWhatsapp} detail="+92 310-5500012" />
+        <Info Icon={FaWhatsapp} detail="+92 318 9185600" />
         <Info Icon={FiPhoneCall} detail="+92 091 3104369" />
         <Info Icon={TfiEmail} detail="bsconsultanlts999@gmail.com" />
         <Info
