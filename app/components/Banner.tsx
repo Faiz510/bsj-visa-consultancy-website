@@ -1,4 +1,5 @@
 import React from 'react';
+import OverlaySection from './OverlaySection';
 
 interface BannerPropType {
   title: string;
@@ -15,7 +16,7 @@ const Banner: React.FC<BannerPropType> = ({ title, bgImg }) => {
         {title}
       </h2>
 
-      <div className="absolute w-full h-full top-0 left-0 inset-0 bg-black opacity-20 z-10" />
+      <OverlaySection />
     </section>
   );
 };
