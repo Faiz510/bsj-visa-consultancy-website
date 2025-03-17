@@ -13,6 +13,7 @@ const AboutImg: React.FC<AboutImgProps> = ({ image }) => {
       alt="this is image"
       width={200}
       height={200}
+      priority
     />
   );
 };

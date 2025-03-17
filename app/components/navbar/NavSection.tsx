@@ -23,7 +23,7 @@ const NavSection: React.FC<NavSectionProps> = ({ showNav, setShowNav }) => {
       transition={{ duration: 0.3, ease: 'easeInOut' }}
     >
       <ul
-        className={`md:flex md:justify-between md:items-center md:space-x-4 md:mt-2 absolute  bg-white md:bg-transparent pl-4 top-0 w-40 md:w-[350px] md:right-4 md:h-full h-[100vh] 
+        className={`md:flex md:justify-center md:items-center md:space-x-4 md:mt-2 absolute  bg-white md:bg-transparent pl-2 top-0 w-40 md:w-[500px] md:right-4 md:h-full h-[100vh] 
         ${showNav ? 'right-0' : 'right-[-200px]'}
         `}
       >
@@ -34,6 +34,7 @@ const NavSection: React.FC<NavSectionProps> = ({ showNav, setShowNav }) => {
         <Navlink href="/" name="Home" />
         <Navlink href="/about" name="About" />
         <Navlink href="/services" name="Service" />
+        <Navlink href="/destinations" name="Destinations" />
         <Navlink href="/contact" name="Contact" />
       </ul>
     </motion.nav>

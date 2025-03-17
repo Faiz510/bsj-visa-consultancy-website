@@ -30,6 +30,7 @@ const HeroImage: React.FC<HeroImageProp> = ({ dataInt, image }) => {
         width={700}
         height={700}
         className={`rounded-2xl cursor-pointer`}
+        priority
       />
     </motion.div>
   );

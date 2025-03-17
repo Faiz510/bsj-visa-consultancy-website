@@ -39,7 +39,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
               transition: { duration: 0.3 },
             }}
           >
-            <Image src={Icon} width={80} height={80} alt="service icon" />
+            <Image
+              src={Icon}
+              width={80}
+              height={80}
+              alt="service icon"
+              priority
+            />
           </motion.div>
         </div>
         <h4 className="text-3xl font-medium tracking-wider text-left">

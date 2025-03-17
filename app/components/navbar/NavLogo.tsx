@@ -5,7 +5,7 @@ import Image from 'next/image';
 const NavLogo = () => {
   return (
     <Link href={'/'}>
-      <Image src={Logo} alt="Logo img" width={75} height={75} />
+      <Image src={Logo} alt="Logo img" width={75} height={75} priority />
     </Link>
   );
 };

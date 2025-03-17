@@ -32,6 +32,7 @@ const OurLayout: React.FC<OurLayoutPropType> = ({
           width={400}
           height={500}
           className="w-[600px] h-[400px] object-center object-cover rounded-lg"
+          priority
         />
       </div>
       <div

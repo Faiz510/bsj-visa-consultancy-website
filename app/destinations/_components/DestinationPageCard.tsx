@@ -1,24 +1,25 @@
-import Image from 'next/image';
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import OverlaySection from '@/app/components/OverlaySection';
 
-interface DestinationHomeCardProps {
+interface DestinationPageCardProps {
   imgSrc: string;
   altText: string;
   title: string;
   visa: string;
 }
 
-const DestinationHomeCard: React.FC<DestinationHomeCardProps> = ({
+const DestinationPageCard: React.FC<DestinationPageCardProps> = ({
   imgSrc,
   altText,
   title,
   visa,
 }) => {
   return (
-    <motion.div className=" cursor-pointer relative overflow-hidden rounded-md">
+    <motion.div className=" cursor-pointer relative overflow-hidden rounded-md ">
       <motion.div
-        className="relative w-[600px] h-[300px] overflow-hidden"
+        className="relative w-[400px] h-[300px] overflow-hidden"
         whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
       >
         <Image
@@ -42,4 +43,4 @@ const DestinationHomeCard: React.FC<DestinationHomeCardProps> = ({
   );
 };
 
-export default DestinationHomeCard;
+export default DestinationPageCard;

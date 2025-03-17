@@ -55,6 +55,7 @@ const ServiceSectionLayout: React.FC<ServiceSectionLayoutPropType> = ({
           width={700}
           height={500}
           className="w-[700px]  h-[600px] object-center object-cover "
+          priority
         />
       </div>
       <div
