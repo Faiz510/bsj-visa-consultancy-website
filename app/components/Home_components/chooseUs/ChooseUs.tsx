@@ -14,8 +14,9 @@ const ChooseUs = () => {
           alt="choose use section image"
           width={600}
           height={200}
-          className="rounded-xl shadow-md w-[600px] h-[550px] object-bottom object-cover"
+          className="rounded-xl shadow-md w-[600px] h-[550px] object-bottom "
           priority
+          style={{ objectFit: 'cover' }}
         />
       </div>
       <div className="flex justify-center items-center flex-col gap-4">

@@ -28,7 +28,7 @@ const AboutImgSection = () => {
         height={400}
       />
 
-      <div className="relative top-[-50px] left-[60%]">
+      <div className="relative top-[-50px] left-[50%] md:left-[60%]">
         <motion.div
           initial={ANIMATION_VARIANTS.initial}
           whileInView={{

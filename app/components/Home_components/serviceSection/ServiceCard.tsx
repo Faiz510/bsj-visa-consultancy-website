@@ -21,7 +21,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   const [isHover, setIsHover] = useState<boolean>(false);
 
   return (
-    <Link href={'/service'}>
+    <Link href={'/services'}>
       <motion.div
         className={`${
           color == 'primary' ? 'bg-primary' : 'bg-secondary'

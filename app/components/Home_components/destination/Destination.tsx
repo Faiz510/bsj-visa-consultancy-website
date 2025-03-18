@@ -30,6 +30,7 @@ const Destination = () => {
       className="w-full px-4 md:px-24 my-6 py-10 bg-[#F3F4F6]"
       initial={{ opacity: 0, x: -400 }}
       whileInView={{ opacity: 1, x: 0, transition: { duration: 0.6 } }}
+      viewport={{ once: true }}
     >
       <h3 className="text-secondary text-4xl font-semibold tracking-wider text-center">
         Top Destinations Visa For{' '}
@@ -92,7 +93,7 @@ const Destination = () => {
           text={`View More ${
             isVisa === VisaTabType.BOTH ? '' : isVisa
           } Destination`}
-          href="/destination"
+          href="/destinations/both"
         />
       </div>
     </motion.section>

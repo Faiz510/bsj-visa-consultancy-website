@@ -10,7 +10,7 @@ interface CallToActionType {
 const CallToAction: React.FC<CallToActionType> = ({ text, href }) => {
   const [isHover, setIsHover] = useState<boolean>(false);
   return (
-    <Link href={`${href}`}>
+    <Link href={href}>
       {' '}
       <motion.button
         className="bg-secondary text-white hover:bg-primary hover:text-white rounded-4xl px-4 py-1 md:my-10 my-6 cursor-pointer  flex gap-2 items-center group"

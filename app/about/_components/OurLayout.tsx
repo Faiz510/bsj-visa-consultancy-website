@@ -31,12 +31,12 @@ const OurLayout: React.FC<OurLayoutPropType> = ({
           alt="our mission image"
           width={400}
           height={500}
-          className="w-[600px] h-[400px] object-center object-cover rounded-lg"
+          className="w-[600px] h-[500px] object-center object-cover rounded-lg"
           priority
         />
       </div>
       <div
-        className={`col-span-6 flex justify-start items-center flex-col gap-8 ${
+        className={`col-span-6 flex justify-center items-center flex-col gap-8 ${
           our === 'mission' ? '' : ' md:order-1'
         } `}
       >

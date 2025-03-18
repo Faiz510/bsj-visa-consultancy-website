@@ -19,8 +19,8 @@ export default function Home() {
       <HeroSection />
       <About />
       <Destination />
-      <ChooseUs />
       <Service />
+      <ChooseUs />
     </div>
   );
 }

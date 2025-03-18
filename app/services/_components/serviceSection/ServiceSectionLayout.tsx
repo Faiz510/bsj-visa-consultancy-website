@@ -71,7 +71,7 @@ const ServiceSectionLayout: React.FC<ServiceSectionLayoutPropType> = ({
           whileInView={{
             width: 150,
             opacity: 1,
-            transition: { duration: 0.5 },
+            transition: { duration: 0.6 },
           }}
         />
 

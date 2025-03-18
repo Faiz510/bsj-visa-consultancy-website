@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
-import React from 'react';
+import React, { useEffect } from 'react';
 import MenuIcons from './MenuIcons';
 import Navlink from './Navlink';
+import { body } from 'framer-motion/m';
 
 interface NavSectionProps {
   showNav: boolean;
@@ -10,6 +11,17 @@ interface NavSectionProps {
 
 const NavSection: React.FC<NavSectionProps> = ({ showNav, setShowNav }) => {
   const showNavClasses = 'opacity-0 pointer-events-none';
+
+  useEffect(() => {
+    showNav
+      ? (document.body.style.overflow = 'hidden')
+      : (document.body.style.overflow = 'auto');
+
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [showNav]);
+
   return (
     <motion.nav
       className={`z-50   ${
@@ -34,7 +46,7 @@ const NavSection: React.FC<NavSectionProps> = ({ showNav, setShowNav }) => {
         <Navlink href="/" name="Home" />
         <Navlink href="/about" name="About" />
         <Navlink href="/services" name="Service" />
-        <Navlink href="/destinations" name="Destinations" />
+        <Navlink href="/destinations/both" name="Destinations" />
         <Navlink href="/contact" name="Contact" />
       </ul>
     </motion.nav>

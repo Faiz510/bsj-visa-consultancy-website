@@ -9,18 +9,18 @@ const AboutContent = () => {
         {' '}
         BSJ{' '}
       </h2>
-      <div className=" text-secondary my-2 font-medium tracking-wider flex justify-start items-end gap-2">
-        <h3 className="text-5xl"> Consltant & Immigiration</h3>{' '}
+      <div className=" text-secondary my-2 font-medium tracking-wider flex justify-start items-end gap-1">
+        <h3 className="text-2xl md:text-4xl"> Consltant & Immigiration</h3>{' '}
         <span className="text-lg">(pvt.ltd)</span>
       </div>
-      <h4 className="text-3xl text-secondary tracking-wider font-medium">
+      <h4 className="text-2xl md:text-3xl text-secondary tracking-wider font-medium">
         Study And Tours
       </h4>
       <h4 className="text-sm text-secondary tracking-wider">
         Your trusted partner in immigration services! Whether you're planning to
         study abroad or explore new destinations, we simplify your student and
         tourist visa process for a hassle-free journey. Pack your bags—your
-        journey starts here!
+        journey cenjustify-centers here!
       </h4>
       <CallToAction text="More About" href="/about" />
     </div>

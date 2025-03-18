@@ -8,6 +8,10 @@
   --font-poppins: Poppins, 'sans-serif';
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .NavLink {
   @apply text-lg text-primary tracking-wider lg:px-2;
 }

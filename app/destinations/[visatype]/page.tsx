@@ -60,7 +60,7 @@ const VisaTypeSlug = () => {
       </div>
 
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  justify-between items-center gap-6 my-4 mx-auto w-full px-20"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  justify-between items-center gap-6 my-8 mx-auto w-full px-20"
         initial={{ opacity: 0 }}
         animate={{ transition: { duration: 0.8 }, opacity: 1 }}
         key={`cards-${visaType}`}

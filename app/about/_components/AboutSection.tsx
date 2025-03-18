@@ -19,10 +19,10 @@ const AboutSection = () => {
             BSJ{' '}
           </h2>
           <div className=" text-secondary my-2 font-medium tracking-wider flex justify-start items-end gap-2">
-            <h3 className="text-5xl"> Consltant & Immigiration</h3>{' '}
+            <h3 className="text-2xl md:text-4xl"> Consltant & Immigiration</h3>{' '}
             <span className="text-lg">(pvt.ltd)</span>
           </div>
-          <h4 className="text-3xl text-secondary tracking-wider font-medium">
+          <h4 className="text-2xl md:text-3xl text-secondary tracking-wider font-medium">
             Study And Tours
           </h4>
           <div className="text-[16px] text-secondary tracking-wider">
