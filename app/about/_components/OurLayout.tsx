@@ -32,7 +32,7 @@ const OurLayout: React.FC<OurLayoutPropType> = ({
           width={400}
           height={500}
           className="w-[600px] h-[500px] object-center object-cover rounded-lg"
-          priority
+          loading="lazy"
         />
       </div>
       <div

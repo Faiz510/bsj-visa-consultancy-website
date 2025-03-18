@@ -10,10 +10,10 @@ const AboutImg: React.FC<AboutImgProps> = ({ image }) => {
     <Image
       className="rounded-2xl border-2 border-gray-400 shadow-black/35  shadow-xl"
       src={`${image}`}
-      alt="this is image"
+      alt="travel Images"
       width={200}
       height={200}
-      priority
+      loading="lazy"
     />
   );
 };

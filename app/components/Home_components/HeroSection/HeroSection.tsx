@@ -20,7 +20,7 @@ const HeroSection = () => {
   return (
     <>
       <section className="md:flex md:justify-center md:items-center min-h-[100vh] bg-[#F3F4F6] pt-12 md:pt-6 overflow-x-hidden ">
-        <div className="md:grid  md:grid-cols-12 md:gap-2 md:px-24 px-4 pt-8">
+        <div className="md:grid  md:grid-cols-12 md:gap-2 md:px-24 px-4 pt-8 ">
           {/* content section  */}
           <HeroContent
             dataInt={dataInt}

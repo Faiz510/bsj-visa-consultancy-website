@@ -1,5 +1,5 @@
 import React from 'react';
-import DESTINATION_DATA from '../DestinationData';
+import DESTINATION_DATA from '../../../Data/DestinationData';
 import DestinationHomeCard from './DestinationHomeCard';
 
 enum VisaTabType {

@@ -38,6 +38,7 @@ const AboutImgSection = () => {
             opacity: 1,
           }}
           transition={{ duration: 0.3 }}
+          viewport={{ once: true }}
         >
           <AboutImg image={`${about1.src}`} />
         </motion.div>
@@ -52,6 +53,7 @@ const AboutImgSection = () => {
             opacity: 1,
           }}
           transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
         >
           <AboutImg image={`${about2.src}`} />
         </motion.div>
@@ -64,6 +66,7 @@ const AboutImgSection = () => {
             rotate: 10,
           }}
           transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
         >
           <AboutImg image={`${about3.src}`} />
         </motion.div>

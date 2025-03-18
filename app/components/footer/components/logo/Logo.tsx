@@ -12,8 +12,8 @@ const Logo = () => {
         priority
       />
       <p className="pl-4 text-secondary opacity-85">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magni nemo
-        similique a mollitia, facilis sed quaerat error facere odio.
+        Your trusted partner in immigration services! Whether you're planning to
+        study abroad or explore new destinations.
       </p>
     </div>
   );

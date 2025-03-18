@@ -21,42 +21,50 @@ const ANIMATION_VARIANTS = {
 const VisaTypeSlug = () => {
   const params = useParams();
   const visaType = params.visatype;
+  const tabActiveClass =
+    'bg-secondary border-none text-white shadow-2xl text-xl';
+  const tabClasses =
+    'text-lg font-medium tracking-wider text-secondary border-2 border-secondary rounded-2xl px-3 cursor-pointer hover:bg-secondary hover:text-white hover:border-transparent';
 
   return (
     <div className="pt-18">
       <Banner title="Destination Page" bgImg={DestBgImg.src} key={''} />
       <div className="flex justify-center items-center gap-4 my-8 ">
-        <motion.div
-          className={`text-lg font-medium tracking-wider text-secondary border-2 border-secondary rounded-2xl px-3 cursor-pointer hover:bg-primary hover:text-white hover:border-transparent ${
-            visaType === 'both' ? 'bg-primary border-none text-white' : ''
-          }`}
-          whileHover={ANIMATION_VARIANTS.initail}
-          whileTap={{ scale: 0.95 }}
-        >
-          <Link href={'/destinations/both'}> Both </Link>
-        </motion.div>
+        <Link href={'/destinations/both'}>
+          <motion.div
+            className={`${tabClasses} ${
+              visaType === 'both' ? `${tabActiveClass}` : ''
+            }`}
+            whileHover={ANIMATION_VARIANTS.initail}
+            whileTap={{ scale: 0.95 }}
+          >
+            Both
+          </motion.div>
+        </Link>
 
-        <motion.div
-          className={`text-lg font-medium tracking-wider text-secondary border-2 border-secondary rounded-2xl px-3 cursor-pointer hover:bg-primary hover:text-white hover:border-transparent ${
-            visaType === 'student' ? 'bg-primary border-none text-white' : ''
-          }`}
-          whileHover={ANIMATION_VARIANTS.initail}
-          whileTap={{ scale: 0.95 }}
-        >
-          <Link href={'/destinations/student'}>Student </Link>
-        </motion.div>
+        <Link href={'/destinations/students'}>
+          <motion.div
+            className={`${tabClasses} ${
+              visaType === 'students' ? `${tabActiveClass}` : ''
+            }`}
+            whileHover={ANIMATION_VARIANTS.initail}
+            whileTap={{ scale: 0.95 }}
+          >
+            Student
+          </motion.div>
+        </Link>
 
-        <motion.div
-          className={`text-lg font-medium tracking-wider text-secondary border-2 border-secondary rounded-2xl px-3 cursor-pointer hover:bg-primary hover:text-white hover:border-transparent ${
-            visaType === 'tourist'
-              ? 'bg-primary border-none text-white shadow-2xl text-xl'
-              : ''
-          }`}
-          whileHover={ANIMATION_VARIANTS.initail}
-          whileTap={{ scale: 0.95 }}
-        >
-          <Link href={'/destinations/tourist'}>Tourist</Link>
-        </motion.div>
+        <Link href={'/destinations/tourists'}>
+          <motion.div
+            className={`${tabClasses} ${
+              visaType === 'tourists' ? `${tabActiveClass}` : ''
+            }`}
+            whileHover={ANIMATION_VARIANTS.initail}
+            whileTap={{ scale: 0.95 }}
+          >
+            Tourist
+          </motion.div>
+        </Link>
       </div>
 
       <motion.div

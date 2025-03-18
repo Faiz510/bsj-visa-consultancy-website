@@ -11,9 +11,11 @@ enum VisaTabType {
 }
 const Destination = () => {
   const [isVisa, setIsVisa] = useState<VisaTabType>(VisaTabType.BOTH);
-  const activeTabClass = 'bg-primary border-white text-white scale-110';
+  const activeTabClass = 'bg-primary border-none text-white shadow-2xl text-xl';
+  const tabClasses =
+    'text-lg font-medium tracking-wider text-secondary border-2 border-secondary rounded-2xl px-3 cursor-pointer hover:bg-primary hover:text-white hover:border-transparent';
 
-  const ANIMATION_VARIANTS = {
+  const tabVariant = {
     initail: {
       scale: 1.05,
       transition: {
@@ -23,6 +25,8 @@ const Destination = () => {
       },
       boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.2)',
     },
+
+    tap: { scale: 0.95 },
   };
 
   return (
@@ -38,40 +42,37 @@ const Destination = () => {
 
       <div className="flex justify-center items-center gap-4 my-8">
         <motion.div
-          className={`text-lg font-medium tracking-wider text-secondary border-2 border-secondary rounded-2xl px-3 cursor-pointer hover:bg-primary hover:text-white hover:border-transparent ${
-            isVisa == VisaTabType.BOTH
-              ? 'bg-primary border-none text-white'
-              : ''
+          className={`${tabClasses} ${
+            isVisa == VisaTabType.BOTH ? `${activeTabClass}` : ''
           }`}
           onClick={() => setIsVisa(VisaTabType.BOTH)}
-          whileHover={ANIMATION_VARIANTS.initail}
-          whileTap={{ scale: 0.95 }}
+          variants={tabVariant}
+          whileHover={'initail'}
+          whileTap={'tap'}
         >
           Both
         </motion.div>
 
         <motion.div
-          className={`text-lg font-medium tracking-wider text-secondary border-2 border-secondary rounded-2xl px-3 cursor-pointer hover:bg-primary hover:text-white hover:border-transparent ${
-            isVisa == VisaTabType.STUDENT
-              ? 'bg-primary border-none text-white'
-              : ''
+          className={`${tabClasses} ${
+            isVisa == VisaTabType.STUDENT ? `${activeTabClass}` : ''
           }`}
           onClick={() => setIsVisa(VisaTabType.STUDENT)}
-          whileHover={ANIMATION_VARIANTS.initail}
-          whileTap={{ scale: 0.95 }}
+          variants={tabVariant}
+          whileHover={'initail'}
+          whileTap={'tap'}
         >
           Student
         </motion.div>
 
         <motion.div
-          className={`text-lg font-medium tracking-wider text-secondary border-2 border-secondary rounded-2xl px-3 cursor-pointer hover:bg-primary hover:text-white hover:border-transparent ${
-            isVisa == VisaTabType.TOURIST
-              ? 'bg-primary border-none text-white shadow-2xl text-xl'
-              : ''
+          className={`${tabClasses} ${
+            isVisa == VisaTabType.TOURIST ? `${activeTabClass}` : ''
           }`}
           onClick={() => setIsVisa(VisaTabType.TOURIST)}
-          whileHover={ANIMATION_VARIANTS.initail}
-          whileTap={{ scale: 0.95 }}
+          variants={tabVariant}
+          whileHover={'initail'}
+          whileTap={'tap'}
         >
           Tourist
         </motion.div>
@@ -93,7 +94,7 @@ const Destination = () => {
           text={`View More ${
             isVisa === VisaTabType.BOTH ? '' : isVisa
           } Destination`}
-          href="/destinations/both"
+          href={`/destinations/${isVisa.toLowerCase()}`}
         />
       </div>
     </motion.section>

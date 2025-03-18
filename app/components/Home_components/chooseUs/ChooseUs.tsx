@@ -15,7 +15,7 @@ const ChooseUs = () => {
           width={600}
           height={200}
           className="rounded-xl shadow-md w-[600px] h-[550px] object-bottom "
-          priority
+          loading="lazy"
           style={{ objectFit: 'cover' }}
         />
       </div>

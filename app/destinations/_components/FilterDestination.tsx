@@ -1,5 +1,5 @@
 import DestinationHomeCard from '@/app/components/Home_components/destination/components/DestinationHomeCard';
-import DESTINATION_DATA from '@/app/components/Home_components/destination/DestinationData';
+import DESTINATION_DATA from '@/app/components/Data/DestinationData';
 import React from 'react';
 import DestinationPageCard from './DestinationPageCard';
 

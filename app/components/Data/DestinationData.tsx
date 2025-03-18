@@ -1,15 +1,15 @@
 import thailand from '@/public/home-images/destination/tourist/thailand.jpg';
-import singapore from '@/public/home-images/destination/tourist/singapore.jpg';
+import singapore from '@/public/home-images/destination/tourist/singapore.jpeg';
 import malaysia from '@/public/home-images/destination/tourist/malaysia.jpg';
-import dubai from '@/public/home-images/destination/tourist/dubia.jpg';
+import dubai from '@/public/home-images/destination/tourist/dubia.jpeg';
 import maldives from '@/public/home-images/destination/tourist/maldives.jpg';
-import bangkok from '@/public/home-images/destination/tourist/bangkok.jpg';
+import bangkok from '@/public/home-images/destination/tourist/bangkok.jpeg';
 import azherbhaijan from '@/public/home-images/destination/tourist/azherbhaijan.jpg';
 import northCyprus from '@/public/home-images/destination/students/north-cyprus.jpg';
 import russia from '@/public/home-images/destination/students/mascow.jpg';
-import uk from '@/public/home-images/destination/students/China.jpg';
-import china from '@/public/home-images/destination/students/China.jpg';
-import netherland from '@/public/home-images/destination/students/netherlands.jpg';
+import uk from '@/public/home-images/destination/students/uk.jpeg';
+import china from '@/public/home-images/destination/students/china.jpeg';
+import paris from '@/public/home-images/destination/tourist/paris.jpg';
 
 enum VisaType {
   TOURIST = 'Tourist Visa',
@@ -73,7 +73,7 @@ const DESTINATION_DATA: DestinationDataType[] = [
     visa: VisaType.STUDENT,
   },
   {
-    image: `${netherland.src}`,
+    image: `${paris.src}`,
     title: 'Schengen',
     visa: VisaType.STUDENT,
   },

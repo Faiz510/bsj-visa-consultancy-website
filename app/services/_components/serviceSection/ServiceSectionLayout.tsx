@@ -54,8 +54,8 @@ const ServiceSectionLayout: React.FC<ServiceSectionLayoutPropType> = ({
           alt="serviceRowmission image"
           width={700}
           height={500}
-          className="w-[700px]  h-[600px] object-center object-cover "
-          priority
+          className="w-[700px] h-[600px] object-center object-cover "
+          loading="lazy"
         />
       </div>
       <div
@@ -73,6 +73,7 @@ const ServiceSectionLayout: React.FC<ServiceSectionLayoutPropType> = ({
             opacity: 1,
             transition: { duration: 0.6 },
           }}
+          viewport={{ once: true }}
         />
 
         <div className="text-lg text-secondary tracking-wider opacity-75">
@@ -84,18 +85,21 @@ const ServiceSectionLayout: React.FC<ServiceSectionLayoutPropType> = ({
           variants={container}
           initial="hidden"
           whileInView="visible"
+          viewport={{ once: true }}
         >
           {points.map((point, i) => (
             <motion.div
               key={i}
               className="flex justify-start gap-2 items-center"
               variants={item}
+              viewport={{ once: true }}
             >
               <Image
                 src={tickIcon.src}
                 width={25}
                 height={25}
                 alt="tick icon"
+                loading="lazy"
               />
               <span className="text-[16px] text-secondary opacity-75">
                 {point}

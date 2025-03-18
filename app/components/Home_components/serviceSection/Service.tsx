@@ -1,8 +1,5 @@
 'use client';
 
-import { FaArrowRight, FaGraduationCap } from 'react-icons/fa6';
-import { FaGlobeAfrica } from 'react-icons/fa';
-import { FaBookOpen } from 'react-icons/fa';
 import ServiceCard from './ServiceCard';
 import globeIcon from '@/public/home-images/services/globe-bsj-icon.svg';
 import bookIcon from '@/public/home-images/services/book-bsj-icon.svg';
@@ -10,10 +7,16 @@ import hotelIcon from '@/public/home-images/services/hotel-bsj-icon.svg';
 import scholarshipIcon from '@/public/home-images/services/scholarship-bsj-icon.svg';
 import studentIcon from '@/public/home-images/services/student-bsj-icon.svg';
 import arrowRightIcon from '@/public/home-images/services/arrow-right-bsj-icon.svg';
+import { motion } from 'framer-motion';
 
 const Service = () => {
   return (
-    <section className="my-10 md:px-20 px-4 py-6">
+    <motion.section
+      className="my-10 md:px-20 px-4 py-6"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1, transition: { duration: 0.6 } }}
+      viewport={{ once: true }}
+    >
       <div className="text-center text-secondary my-6">
         <h3 className="text-5xl font-semibold tracking-wider">What We Offer</h3>
       </div>
@@ -70,7 +73,7 @@ const Service = () => {
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

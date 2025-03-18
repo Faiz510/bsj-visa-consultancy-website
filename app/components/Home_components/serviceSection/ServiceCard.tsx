@@ -58,9 +58,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
             width: isHover ? '40%' : '20%',
             transition: { duration: 0.3 },
           }}
-        >
-          {' '}
-        </motion.div>
+        ></motion.div>
         <p className="text-lg/tight font-extralight tracking-wider text-left px-2 my-2">
           {description}
         </p>
