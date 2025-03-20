@@ -17,6 +17,9 @@ const DestinationHomeCard: React.FC<DestinationHomeCardProps> = ({
   visa,
 }) => {
   const [isHover, setIsHover] = useState<boolean>(false);
+  let visaTitle =
+    visa === 'Student Visa' ? `Study in ${title}` : `Tour to ${title}`;
+
   return (
     <motion.div className=" cursor-pointer relative overflow-hidden rounded-md">
       <motion.div
@@ -33,15 +36,15 @@ const DestinationHomeCard: React.FC<DestinationHomeCardProps> = ({
           className="w-full h-full object-cover rounded-md transition-transform duration-300 group"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-80 transition-opacity duration-300"></div>
       </motion.div>
 
-      <div className="absolute bottom-4 left-5 text-white font-semibold tracking-widest text-5xl z-20">
-        {title}
+      <div className="absolute bottom-4 left-5 text-white font-semibold tracking-widest text-4xl z-20">
+        {visaTitle}
       </div>
       <span className="bg-primary/95 text-white px-2 rounded-2xl text-sm font-medium tracking-widest absolute right-5 top-3 z-20">
         {visa}
       </span>
+      {/* overlay  */}
       <div
         className={`absolute w-full h-full top-0 left-0 inset-0  ${
           isHover ? 'bg-secondary/50' : 'bg-secondary/25'
