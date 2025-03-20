@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import CallToAction from '../../CallToAction';
 import FilteredDestination from './components/FilteredDestination';
+import HomeSectionHeading from '../HomeSectionHeading';
 
 enum VisaTabType {
   STUDENT = 'Students',
@@ -36,9 +37,10 @@ const Destination = () => {
       whileInView={{ opacity: 1, x: 0, transition: { duration: 0.6 } }}
       viewport={{ once: true }}
     >
-      <h3 className="text-secondary text-4xl font-semibold tracking-wider text-center">
-        Top Destinations Visa For{' '}
-      </h3>
+      <HomeSectionHeading
+        SectionHeading="Top Destinations Visa For"
+        key={'distination_heading'}
+      />
 
       <div className="flex justify-center items-center gap-4 my-8">
         <motion.div

@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import React, { useEffect } from 'react';
 import MenuIcons from './MenuIcons';
 import Navlink from './Navlink';
-import { body } from 'framer-motion/m';
 
 interface NavSectionProps {
   showNav: boolean;
@@ -13,9 +12,11 @@ const NavSection: React.FC<NavSectionProps> = ({ showNav, setShowNav }) => {
   const showNavClasses = 'opacity-0 pointer-events-none';
 
   useEffect(() => {
-    showNav
-      ? (document.body.style.overflow = 'hidden')
-      : (document.body.style.overflow = 'auto');
+    if (showNav) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
 
     return () => {
       document.body.style.overflow = 'auto';

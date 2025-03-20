@@ -1,17 +1,6 @@
-import DestinationHomeCard from '@/app/components/Home_components/destination/components/DestinationHomeCard';
 import DESTINATION_DATA from '@/app/components/Data/DestinationData';
 import React from 'react';
 import DestinationPageCard from './DestinationPageCard';
-
-// enum VisaTabType {
-//   STUDENT = 'students',
-//   TOURIST = 'tourists',
-//   BOTH = 'both',
-// }
-
-// interface FilteredDestinationProp {
-//   isVisa: VisaTabType;
-// }
 
 const FilteredDestination = ({ isVisa }: { isVisa: string }) => {
   let filterDestination = DESTINATION_DATA;

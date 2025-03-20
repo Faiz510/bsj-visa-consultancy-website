@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import React, { useEffect, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 

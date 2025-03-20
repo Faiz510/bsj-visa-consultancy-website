@@ -1,6 +1,5 @@
 import React from 'react';
 import bgImg from '@/public/contact/contact-bg.jpg';
-import OverlaySection from '../components/OverlaySection';
 import ContactInfo from './_components/ContactInfo';
 import ContactForm from './_components/ContactForm';
 

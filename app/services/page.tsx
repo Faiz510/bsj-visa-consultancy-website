@@ -5,7 +5,7 @@ import ServiceSection from './_components/serviceSection/ServiceSection';
 const Service = () => {
   return (
     <div className="pt-16">
-      <Banner title="Services page" bgImg={serviceBanner.src} />
+      <Banner bgImg={serviceBanner.src} />
       <ServiceSection />
     </div>
   );

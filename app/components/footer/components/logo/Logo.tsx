@@ -12,8 +12,8 @@ const Logo = () => {
         priority
       />
       <p className="pl-4 text-secondary opacity-85">
-        Your trusted partner in immigration services! Whether you're planning to
-        study abroad or explore new destinations.
+        Your trusted partner in immigration services! Whether you&apos;re
+        planning to study abroad or explore new destinations.
       </p>
     </div>
   );

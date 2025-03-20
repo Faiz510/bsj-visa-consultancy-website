@@ -28,7 +28,7 @@ const VisaTypeSlug = () => {
 
   return (
     <div className="pt-18">
-      <Banner title="Destination Page" bgImg={DestBgImg.src} key={''} />
+      <Banner bgImg={DestBgImg.src} key={''} />
       <div className="flex justify-center items-center gap-4 my-8 ">
         <Link href={'/destinations/both'}>
           <motion.div

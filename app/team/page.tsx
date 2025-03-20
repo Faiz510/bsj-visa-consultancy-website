@@ -7,11 +7,7 @@ import TeamSection from './_components/TeamSection';
 const page = () => {
   return (
     <div className="pt-16">
-      <Banner
-        title="Our Team Page"
-        bgImg={TeamBanner.src}
-        key={'our-team-banner'}
-      />
+      <Banner bgImg={TeamBanner.src} key={'our-team-banner'} />
       <CEOSection />
       <TeamSection />
     </div>

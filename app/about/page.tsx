@@ -9,7 +9,7 @@ import missionImg from '@/public/about/mission-bsj.jpg';
 const About = () => {
   return (
     <div className="pt-16">
-      <Banner title="About Us" bgImg={`${Img.src}`} />
+      <Banner bgImg={`${Img.src}`} />
       <AboutSection />
 
       <OurLayout

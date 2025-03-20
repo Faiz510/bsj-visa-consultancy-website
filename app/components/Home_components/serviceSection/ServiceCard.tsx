@@ -1,6 +1,5 @@
 'use client';
 import React, { useState } from 'react';
-import { IconType } from 'react-icons';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';

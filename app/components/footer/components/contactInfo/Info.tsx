@@ -1,6 +1,5 @@
 import React from 'react';
 import { IconType } from 'react-icons';
-import { FaWhatsapp } from 'react-icons/fa6';
 
 interface InfoPropType {
   Icon: IconType;

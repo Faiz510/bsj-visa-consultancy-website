@@ -17,7 +17,7 @@ const DestinationHomeCard: React.FC<DestinationHomeCardProps> = ({
   visa,
 }) => {
   const [isHover, setIsHover] = useState<boolean>(false);
-  let visaTitle =
+  const visaTitle =
     visa === 'Student Visa' ? `Study in ${title}` : `Tour to ${title}`;
 
   return (
