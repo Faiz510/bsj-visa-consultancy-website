@@ -12,10 +12,14 @@ const Social = () => {
       <Headings heading="Social Links" />
 
       <div className="flex justify-center items-start gap-4">
-        <SocialIcon src={Fb} alt="facebook" />
-        <SocialIcon src={Insta} alt="Instagram" />
-        <SocialIcon src={Twitter} alt="Twitter" />
-        <SocialIcon src={LinkedIn} alt="Linked" />
+        <SocialIcon href="" src={Fb} alt="facebook" />
+        <SocialIcon
+          href="https://www.instagram.com/bsjconsultants/"
+          src={Insta}
+          alt="Instagram"
+        />
+        <SocialIcon href="" src={Twitter} alt="Twitter" />
+        <SocialIcon href="" src={LinkedIn} alt="Linked" />
       </div>
     </div>
   );

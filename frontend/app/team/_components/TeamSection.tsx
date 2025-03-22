@@ -12,7 +12,7 @@ const TeamSection = () => {
             alt="profile picture"
             width={300}
             height={200}
-            className="justify-center items-center mx-auto rounded-2xl w-[300px] h-[300px] object-center object-cover"
+            className="justify-center items-center mx-auto rounded-2xl w-[330px] h-[330px] object-center object-cover"
           />
           <div className="flex flex-col gap-2 justify-center items-center my-2">
             <span className="text-xl">{team.name}</span>

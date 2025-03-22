@@ -11,7 +11,7 @@ const ContactInfo = () => {
           className="text-white text-start flex items-start justify-start gap-4"
           key={info.name}
         >
-          <info.icon className="text-xl font-semibold mt-2" />{' '}
+          {info.icon && <info.icon className="text-xl font-semibold mt-2" />}{' '}
           <div className="flex flex-col gap-2 justify-start items-start my-0">
             <span className="uppercase text-lg text-gray-400 font-medium">
               {info.name} :

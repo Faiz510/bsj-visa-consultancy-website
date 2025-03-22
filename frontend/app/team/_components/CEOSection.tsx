@@ -1,5 +1,4 @@
 import Image from 'next/image';
-
 import Binyamin from '@/public/team/binyanin-profile.jpg';
 
 const CEOSection = () => {
@@ -10,9 +9,9 @@ const CEOSection = () => {
           src={Binyamin.src}
           width={450}
           height={800}
-          loading={'lazy'}
+          priority
           alt="Ceo profile image"
-          className="rounded-2xl w-[450px] h-[450px] object-cover object-center"
+          className="rounded-2xl w-[450px] h-[450px] object-cover object-top"
         />
         <div className="flex flex-col justify-center items-center gap-2 my-2">
           <span className="text-xl font-medium">Younas Binyamin</span>

@@ -9,6 +9,10 @@ const page = () => {
     <div className="pt-16">
       <Banner bgImg={TeamBanner.src} key={'our-team-banner'} />
       <CEOSection />
+      <h3 className="text-center font-semibold text-4xl text-black opacity-90 tracking-wide my-16">
+        {' '}
+        Our Team Member{' '}
+      </h3>
       <TeamSection />
     </div>
   );

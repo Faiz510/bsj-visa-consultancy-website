@@ -9,6 +9,7 @@ const Links = () => {
   }
   const navLinks: navLinsType[] = [
     { name: 'About', href: '/about' },
+    { name: 'Our Team', href: '/team' },
     { name: 'Services', href: '/service' },
     { name: 'Contact', href: '/contact' },
     { name: 'Destination', href: '/destination' },

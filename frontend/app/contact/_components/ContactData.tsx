@@ -5,8 +5,8 @@ import { FaLocationDot } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';
 
 interface CONTACT_INFO_TYPE {
-  name: string;
-  icon: IconType;
+  name?: string;
+  icon?: IconType;
   detail: string;
 }
 
@@ -20,6 +20,11 @@ const CONTACT_INFO: CONTACT_INFO_TYPE[] = [
     name: 'Phone',
     icon: FaPhoneAlt,
     detail: '+92 091 3104369',
+  },
+  {
+    name: 'UK No',
+    icon: FaPhoneAlt,
+    detail: '+44 7413 182059',
   },
   {
     name: 'Email',

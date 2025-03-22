@@ -13,6 +13,7 @@ const ContactInfo = () => {
       <div className="flex justify-center items-start flex-col gap-1">
         <Info Icon={FaWhatsapp} detail="+92 318 9185600" />
         <Info Icon={FiPhoneCall} detail="+92 091 3104369" />
+        <Info Icon={FiPhoneCall} detail="+44 7413 182059" />
         <Info Icon={TfiEmail} detail="bsconsultanlts999@gmail.com" />
         <Info
           Icon={CiLocationOn}
