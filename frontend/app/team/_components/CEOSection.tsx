@@ -3,7 +3,7 @@ import Binyamin from '@/public/team/binyanin-profile.jpg';
 
 const CEOSection = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-12 gap-4 px-20 justify-between items-center">
+    <section className="grid grid-cols-1 md:grid-cols-12 gap-4 md:px-20 px-6 justify-between items-center">
       <div className="col-span-5">
         <Image
           src={Binyamin.src}

@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const TeamSection = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-3  lg:gap-2  px:24 justify-center items-center my-20">
+    <section className="grid grid-cols-1 md:grid-cols-3  lg:gap-2  md:px:24 px-4 justify-center items-center my-20">
       {TEAM_DATA.map((team, i) => (
         <div key={i}>
           <Image

@@ -35,7 +35,7 @@ const TEAM_DATA: TEAM_DATA_TYPE[] = [
   },
   {
     name: 'Faizyab Khalid',
-    designation: 'Digital Strategy Consltant',
+    designation: 'Digital Strategy Consultant',
     picture: `${faizyabProfile.src}`,
   },
   {

@@ -12,7 +12,11 @@ const Social = () => {
       <Headings heading="Social Links" />
 
       <div className="flex justify-center items-start gap-4">
-        <SocialIcon href="" src={Fb} alt="facebook" />
+        <SocialIcon
+          href="https://www.facebook.com/share/16UUB2S5nx/"
+          src={Fb}
+          alt="facebook"
+        />
         <SocialIcon
           href="https://www.instagram.com/bsjconsultants/"
           src={Insta}
